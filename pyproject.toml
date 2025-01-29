@@ -5,6 +5,11 @@ requires = [
     "setuptools-scm",
 ]
 
+[dependency-groups]
+dev = [
+    "detect-secrets>=1.5.0",
+]
+
 [project]
 authors = [
     {email = "h.moss@ucl.ac.uk", name = "Harry Moss"},

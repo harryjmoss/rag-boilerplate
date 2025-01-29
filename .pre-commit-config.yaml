@@ -49,3 +49,9 @@ repos:
         files: ^\.github/ISSUE_TEMPLATE/.*\.yml$
         exclude: ^\.github/ISSUE_TEMPLATE/config\.yml$
         args: ["--verbose", "--schemafile", "schemas/github-issue-forms.json"]
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: package.lock.json
