@@ -23,9 +23,17 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
+    "beautifulsoup4>=4.12.3",
     "langchain-community>=0.3.16",
+    "langchain-core>=0.3.32",
+    "langchain-huggingface>=0.1.2",
+    "langchain-openai>=0.3.2",
+    "langchain-postgres>=0.0.12",
     "langchain-text-splitters>=0.3.5",
     "langgraph>=0.2.68",
+    "loguru>=0.7.3",
+    "pydantic-settings>=2.7.1",
+    "pydantic>=2.10.6",
 ]
 description = "A boilerplate setup for RAG workflows"
 dynamic = [
@@ -82,6 +90,7 @@ testpaths = [
 [tool.ruff]
 fix = true
 force-exclude = true
+line-length = 120
 lint.ignore = [
     "COM812", # trailing commas (ruff-format recommended)
     "D203", # no-blank-line-before-class
