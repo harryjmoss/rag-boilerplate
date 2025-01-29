@@ -26,15 +26,15 @@ Harry Moss ([h.moss@ucl.ac.uk](mailto:h.moss@ucl.ac.uk))
 
 <!-- TODO: how do we have an array of collaborators ? -->
 
-
 ## Built With
 
-<!-- TODO: can cookiecutter make a list of frameworks? 
+<!-- TODO: can cookiecutter make a list of frameworks?
 
 - [Framework 1](https://something.com)
 - [Framework 2](https://something.com)
 - [Framework 3](https://something.com)
 -->
+
 ## Getting Started
 
 ### Prerequisites
@@ -43,7 +43,7 @@ Harry Moss ([h.moss@ucl.ac.uk](mailto:h.moss@ucl.ac.uk))
 
 `rag-boilerplate` requires Python 3.12&ndash;3.13.
 
-### Installation
+### Installation - User
 
 <!-- How to build or install the application. -->
 
@@ -68,6 +68,29 @@ and then install in editable mode by running
 ```sh
 pip install -e .
 ```
+
+### Installation - developer
+
+Create a new virtual environment, for example with `uv`
+
+```bash
+uv venv
+source .venv/bin/activate
+```
+
+Install the package itself, development, documentation and test requirements in editable mode
+
+```bash
+uv pip install -e ".[dev,docs,test"]
+```
+
+Remember to install pre-commit hooks
+
+```bash
+pre-commit install
+```
+
+before committing and changes to the code.
 
 ### Running Locally
 
