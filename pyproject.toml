@@ -18,6 +18,9 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
+    "langchain-community>=0.3.16",
+    "langchain-text-splitters>=0.3.5",
+    "langgraph>=0.2.68",
 ]
 description = "A boilerplate setup for RAG workflows"
 dynamic = [
